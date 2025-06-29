@@ -1,0 +1,48 @@
+
+1>generate RSA key <-- github only accept RSA... some tutorial suggest DSA WRONG
+
+cd C:\Users\ht021/.ssh
+
+use dos to generate
+ssh-keygen -o -t rsa -C "ht02135@yahoo.com"
+
+The -o flag forces the tool to generate SSH keys with the OpenSSH format.
+The -t flag specifies the type of SSH keys to create.
+The -C flag allows for comments that get added as metadata at the end of the public key.
+
+these file will be created in C:\Users\ht021/.ssh
+id_rsa      <-- it will generate this private key
+id_rsa.pub  <-- it will generate this public key
+
+/////////////
+
+2>you need to open id_rsa.pub and copy to github
+
+You will need to paste the contents of your public SSH key into GitHub
+
+/////////////
+
+3>test you can ssh to github from dos
+# Attempts to ssh to GitHub
+ssh -T git@github.com
+
+/////////////
+
+4>clone remote repo
+cd C:\worksplace
+git clone https://github.com/ht02135/mygroovy mygroovy
+git clone https://github.com/ht02135/simple simple
+
+///////////////
+
+5>Install TortoiseGit 
+
+dont bother with other option...  
+TortoiseGit >>>>>>>>>>> all other options
+note : i kept getting prompt in eclipse when i do a git pull, even though
+       i pointed private key in eclipse preference ssh. wasted time...
+	   
+git pull/commit via window context menu is way better...
+
+///////////////
+

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+<!--
+groupId - the id of the project's group.
+artifactId - the id of the artifact (project)
+ex1
+  <groupId>com.mycompany.app</groupId>
+  <artifactId>my-app</artifactId>
+ex2
+  <groupId>com.mycompany.app</groupId>
+  <artifactId>my-module</artifactId>
+ex3
+    <groupId>com.mycompany.app</groupId>
+    <artifactId>my-app</artifactId>
+ex4
+groupId=com.google.guava (for the Google Guava project)
+artifactId=guava (for the Google Guava project)
+ex5
+Group ID: com.company.usermanagement
+Artifact ID: user-service
+ex5
+
+-->
+    <groupId>org.hung.app</groupId>
+    <artifactId>hung-simple-training</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <maven.compiler.source>24</maven.compiler.source>
+        <maven.compiler.target>24</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.13.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter</artifactId>
+            <version>5.11.1</version>
+            <scope>test</scope>
+        </dependency>
+		<dependency>
+    		<groupId>org.apache.commons</groupId>
+    		<artifactId>commons-lang3</artifactId>
+    		<version>3.17.0</version>
+		</dependency>
+		<dependency>
+     		<groupId>org.springframework</groupId>
+     		<artifactId>spring-core</artifactId>
+     		<version>6.2.7</version>
+		</dependency>
+		<dependency>
+    		<groupId>org.springframework</groupId>
+    		<artifactId>spring-context</artifactId>
+    		<version>6.2.7</version>
+		</dependency>
+    </dependencies>
+
+</project>
